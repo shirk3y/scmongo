@@ -1,9 +1,8 @@
 =======
-scmongo
+Scrapy httpcache mongo
 =======
 
-This project contains some extensions for using MongoDB with the Scrapy
-web crawling framework.
+A MongoDB backend for HTTP cache storage. It stores responses using GridFS.
 
 Requirements
 ============
@@ -16,15 +15,12 @@ Install
 
 Download and run: ``python setup.py install``
 
-Available extensions
-====================
+or
 
-Mongo Cache Storage
--------------------
+``pip install -e git+https://github.com/shirk3y/scrapy-httpcache-mongo.git#egg=scrapy-httpcache-mongo``
 
-Module: ``scmongo.httpcache``
-
-A MongoDB backend for HTTP cache storage. It stores responses using GridFS.
+Usage
+=====
 
 To use it, set the following Scrapy setting in your project::
 
